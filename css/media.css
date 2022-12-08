@@ -1,0 +1,111 @@
+.services-item-title {
+    text-align: center;
+}
+
+.form-input {
+    margin-bottom: 19px;
+}
+
+@media (max-width: 1024px) {
+    .form-input,
+    .form-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    /* .header-nav {
+        display: none;
+    } */
+    .header-btn {
+        padding: 12px 35px;
+        margin-right: 7px;
+    }
+    .burger {
+        position: relative;
+        display: none;
+        widows: 40px;
+        height: 40px;
+        border: 1px solid #3172b9;
+        border-radius: 3px;
+    }
+    .burger_line {
+        position: absolute;
+        left: 50%;
+        widows: 20px;
+        height: 2px;
+        border-radius: 3px;
+        background-color: #3172b9;
+        transform: translateX(-50%);
+    }
+    .burger_line:first-child {
+        top: 13px;
+    }
+    .burger_line:last-child {
+        bottom: 13px;
+    }
+    .burger_line:nth-child(2) {
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@media (max-width: 992px) {
+    .burger {
+        display: block;
+    }
+    .header-nav {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        min-width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        padding: 50px;
+        box-shadow: 0 0 5px #888;
+        background-color: #fff;
+        overflow-y: auto;
+        visibility: hidden;
+        transform: translateX(-120%);
+        transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .header-nav--active {
+        visibility: visible;
+        transform: none;
+    }
+    .header-nav .header-listist {
+        flex-direction: column;
+    }
+    .header-nav .header-list-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .header-nav .header-link {
+        font-size: 18px;
+    }
+}
+
+.article-center {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .article-center {
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+.articles-item:nth-child(n + 3) {
+    display: none;
+}
+
+.articles-item.articles-item--active {
+    display: block;
+}
+
+.articles--center--hiden {
+    display: block;
+}
